@@ -17,7 +17,7 @@ git clone -b v2 http://git.showgold.cn:8081/wabg/download.git
 
 **使用Package Control组件安装**
 
-1. 按**Ctrl+`**调出console（注：避免热键冲突）
+1. 按\` Ctrl+` \`调出console（注：避免热键冲突）
 
 2. 粘贴以下代码到命令行并回车：
 	```bash
