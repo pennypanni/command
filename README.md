@@ -15,16 +15,16 @@ git clone -b v2 http://git.showgold.cn:8081/wabg/download.git
 
 ### sublime插件配置
 
-**使用Package Control组件安装**
+**使用[Package Control](https://packagecontrol.io/installation)组件安装**
 
 1. 按 **Ctrl+`** 调出console（注：避免热键冲突）
 
-2. 粘贴以下代码到命令行并回车：
+2. SUBLIME TEXT 3 粘贴以下代码到命令行并回车：
 	```bash
-	import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
+	import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 	```
 
-3. 重启Sublime
+3. 重启Sublime Text 3
 
 4. 如果在Perferences->package settings中看到package control这一项，则安装成功。
 
