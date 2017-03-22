@@ -1,7 +1,7 @@
 # 目录
 - [sublime](#sublime插件配置)
-	-[sublime插件配置](#sublime插件配置)
-	-[用命令打开sublime的配置](#subl ./ 配置)
+	- [sublime插件配置](#sublime插件配置)
+	- [用命令打开sublime的配置](#subl--配置)
 - [iTerm安装配置](#iterm安装配置)
 
 ## sublime插件配置
@@ -33,7 +33,7 @@
 	```bash
 	alias subl=\''/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'\'
 	```
-	
+
 	添加完，保存关闭
 
 	```javascript
